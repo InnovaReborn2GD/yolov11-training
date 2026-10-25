@@ -1,5 +1,6 @@
-yolo-env
-runs/*
-datasets/*
+yolo-env/
+runs/*/
+datasets/*/
 *.pt
 *.docx
+*.pdf

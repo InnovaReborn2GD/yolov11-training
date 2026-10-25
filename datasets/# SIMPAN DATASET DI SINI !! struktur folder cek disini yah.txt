@@ -1,0 +1,12 @@
+STRUKTUR FOLDER DATASET (wajib kyk giniii, klo teryata engga sesuaiin yah)
+
+Microplastic-Dataset/
+├── images/
+│   ├── train/
+│   └── val/
+├── labels/
+│   ├── train/
+│   └── val/
+├── test/
+│   ├── images/
+│   └── labels/

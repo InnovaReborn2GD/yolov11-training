@@ -7,8 +7,9 @@ File All in One untuk Training YOLOv11 yang jalan secara lokal (100% offline) me
 
 # Setup Environment
 **NOTE!**
-- Perintah berikut disesuaikan untuk sistem menggunakan sistem operasi Linux (CachyOS/Arch-based) dengan shell fish. Jika ingin dijalankan di sistem lain, bisa disesuaikan kembali.
-- Pastikan perangkat kalian sudah terinstall Python, jika belum bisa menggunakan perintah berikut: `sudo pacman -S python`
+- Perintah berikut disesuaikan untuk perangkat menggunakan sistem operasi Linux (CachyOS/Arch-based) dengan shell fish. Jika ingin dijalankan di sistem lain, bisa disesuaikan kembali.
+- **Untuk perangkat menggunakan Windows (10/11), gunakan file `yolov11_local_training_windows.ipynb`**
+- Pastikan perangkat kalian sudah terinstall Python, jika belum bisa menggunakan perintah berikut: `sudo pacman -S python` atau bisa [klik di sini](https://www.python.org/downloads/).
 - Untuk training ini akan menggunakan CUDA, pastikan perangkat kalian memiliki GPU NVIDIA dengan driver versi terbaru (bisa dicek menggunakan `nvidia-smi` dan `chwd` pada terminal). 
 - Pastikan juga perangkat kalian punya ruang penyimpanan sebesar **5-6 GB**, RAM setidaknya **16 GB**, dan VRAM setidaknya **6 GB**, mengingat proses install dependensi dan training akan memakan penyimpanan, RAM dan VRAM yang cukup banyak. 
 
@@ -19,15 +20,18 @@ File All in One untuk Training YOLOv11 yang jalan secara lokal (100% offline) me
 git clone https://github.com/InnovaReborn2GD/yolov11-training/
 ```
 2. Buat virtual environment Python  
+Jika sudah, akan muncul pilihan kernel yang bisa digunakan, pilih kernel `yolo-env` di notebook ini.
  ```
  python -m venv ~/yolo-env
  source ~/yolo-env/bin/activate.fish
- ```
+```  
+
+
 3. Install dependensi yang diperlukan  
 **NOTE:** Proses ini memerlukan ruang penyimpanan yang cukup besar, sehingga pastikan perangkat kalian punya ruang sebesar 5-6 GB dan koneksi internet yang memadai.  
 ```
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 pip install ultralytics ipykernel matplotlib pandas seaborn opencv-python pyyaml
 ```
-4. Jika sudah, akan muncul pilihan kernel yang bisa digunakan, pilih kernel **yolo-env** di notebook ini.
-5. Selesai deh! Tinggal lanjut training melalui file `yolov11_local_training.ipynb` (semoga laptop kalian ga meledak wkwkw)
+
+4. Selesai deh! Tinggal lanjut training melalui file `yolov11_local_training.ipynb` (semoga laptop kalian ga meledak wkwkw)
