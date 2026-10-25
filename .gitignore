@@ -2,4 +2,4 @@ yolo-env
 runs/*
 datasets/*
 *.pt
-*.docs
+*.docx
