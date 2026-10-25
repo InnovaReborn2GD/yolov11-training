@@ -1,0 +1,10 @@
+path: /home/darklighs/Documents/yolo-training/datasets/MRI-Tumor-Dataset
+train: images/train
+val: images/val
+test: test/images
+nc: 4
+names:
+- Glioma
+- Meningioma
+- Pituitary
+- No Tumor
