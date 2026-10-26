@@ -1,4 +1,4 @@
-STRUKTUR FOLDER DATASET (wajib kyk giniii, klo teryata engga sesuaiin yah)
+STRUKTUR FOLDER DATASET (wajib kyk giniii, klo teryata dri dataset nya engga kek gini disesuaiin yah)
 
 Microplastic-Dataset/
 ├── images/
@@ -10,3 +10,5 @@ Microplastic-Dataset/
 ├── test/
 │   ├── images/
 │   └── labels/
+
+contoh struktur bisa diliat di folder .example-dataset yahhh

@@ -1,0 +1,15 @@
+# file ini berisi dependensi yang digunakan untuk menjalankan YOLOv11 secara lokal. JANGAN DIHAPUS/DIUBAH yahh, klo engga ntar gabisa jalan
+
+# index url untuk PyTorch dengan CUDA 13.0, sesuaiin dg versi driver NVIDIA kalian yah
+--extra-index-url https://download.pytorch.org/whl/cu130
+
+# dependensi disini
+torch
+torchvision 
+ultralytics
+matplotlib
+pandas
+seaborn
+opencv-python
+pyyaml
+ipykernel

@@ -1,6 +1,7 @@
 yolo-env/
 runs/*/
 datasets/*/
+!datasets/.example-dataset/
 *.pt
 *.docx
 *.pdf
